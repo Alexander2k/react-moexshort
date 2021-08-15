@@ -2,6 +2,9 @@
 https://react-moexshort.herokuapp.com/
 
 
+- ReactJS + хуки
+- React Router
+- Axios
 
 
 
