@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card{
+    width: 13rem;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    border-collapse: collapse;
+    border: 2px solid white;
+    color: black;
+}
+.table{
+    border-collapse: collapse;
+    border: 2px solid white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-link{
+    color: black !important;
+
 }
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link
+{
+    margin-top: 10px;
+    width: 50%;
+}
+
+.active{
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8) !important;
+    width: 50%;
+}
+
