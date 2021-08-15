@@ -14,7 +14,7 @@ function Currency() {
     const [eur, setEur] = useState([]);
     const [moex, setMoex] = useState([]);
     const [rtsi, setRtsi] = useState([]);
-    const timer = 100000;
+    const timer = 600000;
 
 
     async function getUSD() {
