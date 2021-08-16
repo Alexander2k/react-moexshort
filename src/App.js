@@ -85,8 +85,8 @@ function App() {
         <div className='container px-4'>
             <Header/>
             <Switch>
-                {router.map(rout =>
-                    <Route
+                {router.map((rout,index) =>
+                    <Route key={index}
                         component={rout.component}
                         path={rout.path}
                         exact={rout.exact}

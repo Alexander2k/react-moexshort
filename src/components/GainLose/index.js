@@ -5,14 +5,9 @@ function GainLose() {
 
     const {stock} = React.useContext(AppContext)
 
-
     const gainers = [...stock].sort((a, b) => a.pctchange < b.pctchange ? 1 : 0).slice(0,10)
 
-
-
-
     const losers = [...stock].sort((a, b) => a.pctchange > b.pctchange ? 1 : 0).slice(0,10)
-
 
     return (
         <div className={'gainlose'}>

@@ -8,7 +8,7 @@ function Header() {
         <div className={"header"}>
             <ul className={"nav nav-pills nav-fill"}>
                 <li className={"nav-item"}>
-                    <NavLink exact activeClass={'active'} className={"nav-link"} to="/" onlyActiveOnIndex>
+                    <NavLink exact className={"nav-link"} to="/" >
                         Главная
                     </NavLink>
                 </li>
