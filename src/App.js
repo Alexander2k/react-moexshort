@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from "react";
-import {Route, Switch} from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import AppContext from './context';
 import api from "./api";
 
-import Stocks from "./components/Stocks";
-import Currency from "./components/Сurrency";
-import ETFUSD from "./components/ETFUSD";
-import Indexes from "./components/Indexes";
+
 import Header from "./components/Header";
-import ETFRUB from "./components/ETFRUB";
+import {router} from "./router";
 
 function sharesData(d) {
     const finalData = []
@@ -87,12 +84,15 @@ function App() {
         <AppContext.Provider value={{etfRub,etfUsd,index,stock,setIndex,setEtfUsd,setEtfRub,setStock}}>
         <div className='container px-4'>
             <Header/>
-            <Currency/>
             <Switch>
-                <Route path="/index" exact component={Indexes}/>
-                <Route path="/stock" exact component={Stocks}/>
-                <Route path="/etf_rus" exact component={ETFRUB}/>
-                <Route path="/etf_usd" exact component={ETFUSD}/>
+                {router.map(rout =>
+                    <Route
+                        component={rout.component}
+                        path={rout.path}
+                        exact={rout.exact}
+                    />
+                )}
+                <Redirect to={'/'}/>
             </Switch>
         </div>
         </AppContext.Provider>

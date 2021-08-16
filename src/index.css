@@ -11,12 +11,10 @@
     border: 2px solid white;
 }
 
-.nav-link{
-    color: black !important;
 
-}
 .nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link
 {
+    color: black !important;
     margin-top: 10px;
     width: 50%;
 }
@@ -26,3 +24,21 @@
     width: 50%;
 }
 
+.gainlose{
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gainlose h2 {
+    width: auto;
+    text-align: center;
+}
+.gainlose__gain{
+    text-align: center;
+}
+
+.gainlose__lose{
+    text-align: center;
+}

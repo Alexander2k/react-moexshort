@@ -1,13 +1,17 @@
 import React from "react";
 import Table from "../Table";
 import AppContext from "../../context";
+import Currency from "../Сurrency";
 
 
 function ETFUSD() {
     const {etfUsd,setEtfUsd} = React.useContext(AppContext)
 
     return (
-        <Table data={etfUsd} setData={setEtfUsd}/>
+        <div>
+            <Currency/>
+            <Table data={etfUsd} setData={setEtfUsd}/>
+        </div>
     )
 }
 
